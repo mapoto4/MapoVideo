@@ -1,8 +1,10 @@
-package com.mapoto4.mapovideo;
+package com.mapoto4.mapovideo.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+
+import com.mapoto4.mapovideo.ActivityCollector;
 
 /**
  * Created by mapoto4 on 2018/4/9.

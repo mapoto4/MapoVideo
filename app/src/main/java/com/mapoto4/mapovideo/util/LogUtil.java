@@ -1,4 +1,4 @@
-package com.mapoto4.mapovideo;
+package com.mapoto4.mapovideo.util;
 
 import android.util.Log;
 

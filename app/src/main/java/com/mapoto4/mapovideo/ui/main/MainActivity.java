@@ -1,7 +1,9 @@
-package com.mapoto4.mapovideo;
+package com.mapoto4.mapovideo.ui.main;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.mapoto4.mapovideo.R;
+import com.mapoto4.mapovideo.ui.BaseActivity;
 
 public class MainActivity extends BaseActivity {
 
