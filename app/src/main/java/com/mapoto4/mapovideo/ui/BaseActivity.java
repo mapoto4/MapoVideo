@@ -1,6 +1,8 @@
 package com.mapoto4.mapovideo.ui;
 
+import android.drm.DrmStore;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
@@ -17,6 +19,10 @@ public class BaseActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         Log.d("BaseActivity",getClass().getSimpleName());
         ActivityCollector.addActivity(this);
+        ActionBar actionbar = getSupportActionBar();
+        if(actionbar != null){
+            actionbar.hide();
+        }
     }
 
     @Override
