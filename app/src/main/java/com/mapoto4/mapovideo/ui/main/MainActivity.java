@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.jpush.android.api.JPushInterface;
 import io.codetail.animation.SupportAnimator;
 import io.codetail.animation.ViewAnimationUtils;
 import yalantis.com.sidemenu.interfaces.Resourceble;
@@ -42,6 +43,11 @@ public class MainActivity extends AppCompatActivity implements ViewAnimator.View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);
+
+
         contentFragment = MainFragment.newInstance(R.mipmap.content_music);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_frame, contentFragment)
